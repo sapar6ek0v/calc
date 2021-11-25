@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calc</title>
+    <link rel="stylesheet" href="css/calc.css">
+</head>
+<body>
+<div class="container">
+    <div class="block-one">
+        <div class="flex-container">
+            <label>
+                <input type="number" class="left-input">
+            </label>
+            <span class="span">
+            </span>
+            <label>
+                <input type="number" class="right-input">
+            </label>
+            <span class="span__sub-span">
+            </span>
+            <label>
+                <input type="text" class="result-input" readonly>
+            </label>
+        </div>
+
+        <div class="flex-container__sub-container">
+            <button disabled class="disabled-button button-rule minus button__operator hover-button">-</button>
+            <button disabled class="disabled-button button-rule plus button__operator hover-button">+</button>
+            <button disabled class="disabled-button button-rule multiplication button__operator hover-button">*</button>
+            <button disabled class="disabled-button button-rule division button__operator hover-button">/</button>
+        </div>
+
+        <div class="prossent-container">
+            <button disabled class="disabled-button button-two big-button hover-button">Степень</button>
+            <button disabled class="disabled-button button-two big-sub-button hover-button">Корень</button>
+        </div>
+
+        <div class="max-min_container">
+            <label class="max-min-label">
+                <input class="max-min-input" type="text">
+                <input type="text" class="result-m-input" readonly>
+            </label>
+
+            <button disabled class="button-max hover-button min-max-button">Max number</button>
+            <button disabled class="button-min hover-button min-max-button">Min number</button>
+        </div>
+    </div>
+    <div class="block-two">
+        <ul id="make-list">
+
+        </ul>
+
+        <button type="button" class="hover-button clear-button">Очистить</button>
+    </div>
+</div>
+
+<script src="calc.js"></script>
+</body>
+</html>
